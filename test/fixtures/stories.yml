@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Google
+  link: https://google.com
+
+two:
+  name: SitePoint Forums
+  link: http://community.sitepoint.com
