@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Readit</title>
+    <title>Rails Ninja Learning Site</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id = "content">
+        <h1> Interesting Links</h1>
+        <% unless flash[:notice].blank? %>
+        <div id= "notification"><%= flash[:notice] %></div>
+        <% end %>
+        <%= yield %>
+    </div>
   </body>
 </html>
